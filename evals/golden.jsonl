@@ -1,0 +1,27 @@
+{"id": "g01", "question": "Why use overlap between chunks?", "relevant_docs": ["retrieval-design"], "must_include": ["boundary"], "category": "chunking"}
+{"id": "g02", "question": "What chunk size works best and why?", "relevant_docs": ["retrieval-design"], "must_include": ["120"], "category": "chunking"}
+{"id": "g03", "question": "Why combine BM25 with vector search?", "relevant_docs": ["retrieval-design"], "must_include": ["blind"], "category": "hybrid"}
+{"id": "g04", "question": "What does reciprocal rank fusion solve?", "relevant_docs": ["retrieval-design"], "must_include": ["ranks"], "category": "hybrid"}
+{"id": "g05", "question": "When should a cross-encoder reranker be used?", "relevant_docs": ["retrieval-design"], "must_include": ["shortlist"], "category": "reranking"}
+{"id": "g06", "question": "Why measure retrieval separately from answer quality?", "relevant_docs": ["evaluation"], "must_include": ["recall"], "category": "evaluation"}
+{"id": "g07", "question": "What makes a golden dataset actually useful?", "relevant_docs": ["evaluation"], "must_include": ["real traffic"], "category": "evaluation"}
+{"id": "g08", "question": "How should LLM-as-judge scoring be set up?", "relevant_docs": ["evaluation"], "must_include": ["faithfulness"], "category": "evaluation"}
+{"id": "g09", "question": "Why do metrics need to gate releases?", "relevant_docs": ["evaluation"], "must_include": ["error budget"], "category": "evaluation"}
+{"id": "g10", "question": "What actually reduces perceived latency for users?", "relevant_docs": ["serving-and-cost"], "must_include": ["first visible token"], "category": "latency"}
+{"id": "g11", "question": "Why track p95 and p99 instead of the average?", "relevant_docs": ["serving-and-cost"], "must_include": ["tail"], "category": "latency"}
+{"id": "g12", "question": "How does two-model routing cut cost?", "relevant_docs": ["serving-and-cost"], "must_include": ["small model"], "category": "cost"}
+{"id": "g13", "question": "What is the risk of routing too much to the small model?", "relevant_docs": ["serving-and-cost"], "must_include": ["ambiguous"], "category": "cost"}
+{"id": "g14", "question": "Why compress conversation context?", "relevant_docs": ["serving-and-cost"], "must_include": ["input tokens"], "category": "cost"}
+{"id": "g15", "question": "Why run tool calls through a durable queue?", "relevant_docs": ["serving-and-cost"], "must_include": ["retries"], "category": "reliability"}
+{"id": "g16", "question": "How should tool schemas be designed so models call them correctly?", "relevant_docs": ["agent-architecture"], "must_include": ["enum"], "category": "agents"}
+{"id": "g17", "question": "How do you stop two agents replying to each other forever?", "relevant_docs": ["agent-architecture"], "must_include": ["step budget"], "category": "agents"}
+{"id": "g18", "question": "What are the three memory tiers for an agent?", "relevant_docs": ["agent-architecture"], "must_include": ["semantic"], "category": "agents"}
+{"id": "g19", "question": "How do you handle LLM non-determinism in production?", "relevant_docs": ["agent-architecture"], "must_include": ["idempotent"], "category": "agents"}
+{"id": "g20", "question": "What happens when a malformed tool response reaches the model?", "relevant_docs": ["agent-architecture"], "must_include": ["wrong"], "category": "agents"}
+{"id": "g21", "question": "What is the capital of France?", "relevant_docs": [], "must_include": [], "category": "out-of-scope", "expect_abstain": true}
+{"id": "g22", "question": "How do I reset my payroll password?", "relevant_docs": [], "must_include": [], "category": "out-of-scope", "expect_abstain": true}
+{"id": "p01", "question": "How can I make my assistant feel faster without making it faster?", "relevant_docs": ["serving-and-cost"], "must_include": ["streaming"], "category": "paraphrase"}
+{"id": "p02", "question": "Cheapest way to handle simple repetitive requests?", "relevant_docs": ["serving-and-cost"], "must_include": ["small model"], "category": "paraphrase"}
+{"id": "p03", "question": "My bot keeps making things up. What stops that?", "relevant_docs": ["evaluation", "agent-architecture"], "must_include": [], "category": "paraphrase"}
+{"id": "p04", "question": "Splitting documents up for search", "relevant_docs": ["retrieval-design"], "must_include": ["chunk"], "category": "paraphrase"}
+{"id": "p05", "question": "Grading answers that have no single correct string", "relevant_docs": ["evaluation"], "must_include": ["judge"], "category": "paraphrase"}
